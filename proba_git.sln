@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "proba_git", "proba_git.njsproj", "{903E4060-639B-4322-B526-F0340C875438}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{903E4060-639B-4322-B526-F0340C875438}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{903E4060-639B-4322-B526-F0340C875438}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{903E4060-639B-4322-B526-F0340C875438}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{903E4060-639B-4322-B526-F0340C875438}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F02B4AA6-05F5-404E-A4B1-EA144731383E}
+	EndGlobalSection
+EndGlobal
