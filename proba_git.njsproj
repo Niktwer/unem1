@@ -30,6 +30,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="app.js" />
+    <Content Include="public\images\es.png" />
+    <Content Include="public\images\test.png" />
+    <Content Include="public\movies\small.mp4" />
+    <Content Include="public\movies\small.webm" />
+    <Content Include="public\pdf\pdf-test.pdf" />
+    <Content Include="public\pdf\text.txt" />
     <Content Include="routes\index.js" />
     <Content Include="routes\users.js" />
     <Content Include="package.json" />
@@ -43,6 +49,8 @@
     <Folder Include="public\" />
     <Folder Include="public\images\" />
     <Folder Include="public\javascripts\" />
+    <Folder Include="public\movies\" />
+    <Folder Include="public\pdf\" />
     <Folder Include="public\stylesheets\" />
     <Folder Include="routes\" />
     <Folder Include="views\" />
