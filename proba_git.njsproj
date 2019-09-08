@@ -31,6 +31,7 @@
   <ItemGroup>
     <Content Include="app.js" />
     <Content Include="public\images\es.png" />
+    <Content Include="public\images\my.jpg" />
     <Content Include="public\images\test.png" />
     <Content Include="public\movies\small.mp4" />
     <Content Include="public\movies\small.webm" />

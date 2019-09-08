@@ -1,4 +1,8 @@
-﻿body {
+﻿h1 {
+    color: red;
+}
+
+body {
     padding: 50px;
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
@@ -6,3 +10,13 @@
 a {
     color: #00B7FF;
 }
+
+button {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: red;
+    text-decoration-style: dashed
+}
+
+

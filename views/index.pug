@@ -1,8 +1,11 @@
 ﻿extends layout
 
 block content
+  p 
+  
+     img(id='myImage' style = "position: absolute; top: 0%; right: 0;" height='200' width='200' src='/images/es.png') 
   h1= title
-  p Welcome to #{title}
+  
   script.
     var f1 = function() { document.getElementById('nv').src='#{data.item1}' }
   script.
