@@ -18,6 +18,7 @@ var getData1 = function () {
         'item3': 'http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-79.jpg'
     }
     return data;
+}
 
 /* GET home page. */
     router.get('/', function (req, res) {
