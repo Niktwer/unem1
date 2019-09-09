@@ -32,10 +32,24 @@ ac.rollover {
     display: block; /*  Рисунок как блочный элемент */
     width: 25px; /* Ширина рисунка */
     height: 13px; /*  Высота рисунка */
-}
 
+    
+    /*onclick='en()')*/
+}
+    /* ac.rollover.background: url('/images/uk.png'),
+     ac.rollover:hover.background: url('/images/uk.png'); */
     ac.rollover:hover {
         background: url('/images/uk.png'); /* Путь к файлу с заменяемым рисунком  */
         width: 25px; /* Ширина рисунка */
         height: 17px; /*  Высота рисунка */
-    }
+        
+}
+#ff {
+    background-image: url('/images/uk.png');
+    width: 17px;
+    height: 17px;
+    border: 1px solid #53da3f;
+     
+}       
+        /*onclick='ua()'*/
+    
