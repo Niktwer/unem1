@@ -19,4 +19,23 @@ button {
     text-decoration-style: dashed
 }
 
+c img {
+    border: 1px solid #53da3f; /* Рамка вокруг изображения-ссылки */
+}
 
+c:hover img {
+    border: 2px solid #f26522; /* Рамка при наведении на ссылку курсора мыши */
+
+}
+ac.rollover {
+    background: url('/images/en.png'); /* Путь к файлу с исходным рисунком  */
+    display: block; /*  Рисунок как блочный элемент */
+    width: 25px; /* Ширина рисунка */
+    height: 13px; /*  Высота рисунка */
+}
+
+    ac.rollover:hover {
+        background: url('/images/uk.png'); /* Путь к файлу с заменяемым рисунком  */
+        width: 25px; /* Ширина рисунка */
+        height: 17px; /*  Высота рисунка */
+    }
