@@ -1,11 +1,12 @@
 ﻿extends layout
 
-block content
+block content 
   h1= title
+  
   script.
     var f1 = function() {
     document.getElementById('nv').src='#{data.item1}'
-    document.getElementById('lan').innerHTML="1"
+    document.getElementById('lan').innerHTML=screen.height
     }
   script.
     var f2 = function() { 
@@ -28,15 +29,19 @@ block content
     if ( document.getElementById('myImage').src.indexOf('#{proba.item1}')>0)
         { 
         document.getElementById('myImage').src='#{proba.item2}'
-        document.getElementById('lan').innerHTML="uk"
+        document.getElementById('lan').innerHTML='uk'
+        document.getElementById('text1').innerHTML='#{opis.item1}'
         }
     else{ 
         document.getElementById('myImage').src='#{proba.item1}'
-        document.getElementById('lan').innerHTML="en"
+        document.getElementById('lan').innerHTML='en'
+        document.getElementById('text1').innerHTML='#{opis.item2}'
         }
         }
   script.
     var flag_im = function() { document.getElementById('lan').innerHTML="вибір мови" } 
   script.
     var flag_out = function() { document.getElementById('lan').innerHTML="" } 
-    
+  script.
+     var h_ss=function(){
+     document.getElementById('nv').height=screen.height*0.5}

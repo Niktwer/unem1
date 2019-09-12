@@ -2,8 +2,6 @@
 var express = require('express');
 var router = express.Router();
 
-
-
 var getData9 = function () {
     var el = {
         'item1': '/images/en.png',
@@ -30,9 +28,18 @@ var getData1 = function () {
     return data;
 }
 
+var getText1 = function () {
+    var text1 = {
+        'item1': '/pdf/text.txt',
+        'item2': 'vvvvvvvvvvvvvvv nbbbbbbbbbb'
+    }
+    return text1;
+}
+
+
 /* GET home page. */
     router.get('/', function (req, res) {
-        res.render('index', { title: 'Тверезовський Микола', "data": getData(), "data1": getData1(),  "proba": getData9() });
+        res.render('index', { title: 'Тверезовський Микола', "data": getData(), "data1": getData1(), "proba": getData9(), "opis": getText1()});
     });
 
     module.exports = router;
