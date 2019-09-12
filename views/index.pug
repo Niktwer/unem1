@@ -1,15 +1,22 @@
 ﻿extends layout
 
 block content
-  p 
-  
   h1= title
   script.
-    var f1 = function() { document.getElementById('nv').src='#{data.item1}' }
+    var f1 = function() {
+    document.getElementById('nv').src='#{data.item1}'
+    document.getElementById('lan').innerHTML="1"
+    }
   script.
-    var f2 = function() { document.getElementById('nv').src='#{data.item2}' }
+    var f2 = function() { 
+    document.getElementById('nv').src='#{data.item2}' 
+    document.getElementById('lan').innerHTML="2"
+    }
   script.
-    var f3 = function() { document.getElementById('nv').src='#{data.item3}' }
+    var f3 = function() {
+    document.getElementById('nv').src='#{data.item3}' 
+    document.getElementById('lan').innerHTML="3"
+    }
   script.
     var en = function() { document.getElementById('nv').src='#{data1.item1}' }
   script.
@@ -21,12 +28,15 @@ block content
     if ( document.getElementById('myImage').src.indexOf('#{proba.item1}')>0)
         { 
         document.getElementById('myImage').src='#{proba.item2}'
+        document.getElementById('lan').innerHTML="uk"
         }
     else{ 
         document.getElementById('myImage').src='#{proba.item1}'
+        document.getElementById('lan').innerHTML="en"
         }
         }
   script.
-    var flag_im = function() { document.getElementById('myImage').src='#{proba}' } 
-  
+    var flag_im = function() { document.getElementById('lan').innerHTML="вибір мови" } 
+  script.
+    var flag_out = function() { document.getElementById('lan').innerHTML="" } 
     

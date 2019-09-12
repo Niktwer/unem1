@@ -1,21 +1,23 @@
 ﻿doctype html
 html
   head
-    title= title
-    p
     link(rel='stylesheet', href='/stylesheets/main.css')
   
-    c:   img(id="myImage" style = "position: absolute; top: 0%; right: 0; margin-right: 10px; margin-top: 10px;  vertical-align:bottom; " height='25px' width='25px' src='/images/uk.png' onclick='bd()') 
+    c:   img(id="myImage" style = "position: absolute; top: 0%; right: 0; margin-right: 10px; margin-top: 10px;  vertical-align:bottom; " height='25px' width='25px' src='/images/uk.png' onclick='bd()' onMouseOver='flag_im()' onMouseOut='flag_out()') 
   body
     block content
     <p><ac id='gh' href="#" class="rollover" onclick='flag()' > </ac></p>
     <p>
-    button(id="ff" title="kkkkkkkkkkk" onMouseOver='border()')
+    button(id="ff" title="kkkkkkkkkkk" onMouseOver='flag_im()')
     <p>
+        <div>
     c:   img(id='myImage1' height='200' width='200' src='/images/my.jpg') 
     p
     <iframe id="nv" style = "text-align: center;"  src = "/viewer#../pdf/pdf-test.pdf" width='100%' height=auto allowfullscreen webkitallowfullscreen></iframe>
-    p bnbjhjhj
-    d: button(onclick='f1()') One!
-    d: button(onclick='f2()') Two!
-    d: button(onclick='f3()') Three!
+        </div>
+        <div id="lan"></div>
+        <div id="but" align="center">
+            d: button(title="1" onclick='f1()') One!
+            d: button(title="2" onclick='f2()') Two!
+            d: button(title="3" onclick='f3()') Three!
+    
