@@ -3,9 +3,7 @@
 block content
   p 
   
-     img(id='myImage' style = "position: absolute; top: 0%; right: 0; margin-right: 10px; margin-top: 10px;  vertical-align:bottom; " height='25px' width='25px' src='/images/uk.png') 
   h1= title
-  
   script.
     var f1 = function() { document.getElementById('nv').src='#{data.item1}' }
   script.
@@ -17,6 +15,18 @@ block content
   script.
     var ua = function() { document.getElementById('nv').src='#{data1.item2}' }
   script.
-    var flag = function() { document.getElementById('nv').src='#{data1.item2}'      };
-    script.
-    var bd = function() { document.getElementById('ff').border=2px};
+    var flag = function() { document.getElementById('nv').src='#{data1.item2}' }
+  script.
+    var bd = function() {
+    if ( document.getElementById('myImage').src.indexOf('#{proba.item1}')>0)
+        { 
+        document.getElementById('myImage').src='#{proba.item2}'
+        }
+    else{ 
+        document.getElementById('myImage').src='#{proba.item1}'
+        }
+        }
+  script.
+    var flag_im = function() { document.getElementById('myImage').src='#{proba}' } 
+  
+    

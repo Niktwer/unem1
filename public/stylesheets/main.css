@@ -11,20 +11,26 @@ a {
     color: #00B7FF;
 }
 
-button {
-    width: 100px;
-    height: 100px;
+d button {
+    width: 50px;
+    height: 50px;
     border-radius: 100%;
-    background-color: red;
-    text-decoration-style: dashed
+    background-color: aquamarine;
+    text-decoration-style: dashed;
+    padding: 0px;
+    margin: 10px;
 }
 
+ d:hover button {
+        border: 2px solid #b6ff00;
+    }
+
 c img {
-    border: 1px solid #53da3f; /* Рамка вокруг изображения-ссылки */
+    border: 0px solid #53da3f; /* Рамка вокруг изображения-ссылки */
 }
 
 c:hover img {
-    border: 2px solid #f26522; /* Рамка при наведении на ссылку курсора мыши */
+    border: 1px solid #f26522; /* Рамка при наведении на ссылку курсора мыши */
 
 }
 ac.rollover {
