@@ -35,10 +35,10 @@ c:hover img {
 
 }
 ac.rollover {
-    background: url('/images/en.png'); /* Путь к файлу с исходным рисунком  */
+    background: url('/images/ic_02.png'); /* Путь к файлу с исходным рисунком  */
     display: block; /*  Рисунок как блочный элемент */
-    width: 25px; /* Ширина рисунка */
-    height: 13px; /*  Высота рисунка */
+    width: 48px; /* Ширина рисунка */
+    height: 48px; /*  Высота рисунка */
 
     
     /*onclick='en()')*/
@@ -46,9 +46,9 @@ ac.rollover {
     /* ac.rollover.background: url('/images/uk.png'),
      ac.rollover:hover.background: url('/images/uk.png'); */
     ac.rollover:hover {
-        background: url('/images/uk.png'); /* Путь к файлу с заменяемым рисунком  */
-        width: 25px; /* Ширина рисунка */
-        height: 17px; /*  Высота рисунка */
+        background: url('/images/ic_back_00.png'); /* Путь к файлу с заменяемым рисунком  */
+        width: 144px; /* Ширина рисунка */
+        height: 96px; /*  Высота рисунка */
         
 }
 #ff {
@@ -68,6 +68,13 @@ ac.rollover {
     background-position: 50% 50%;
 }
 .container1 {
-    background-image: url('/images/uk.png');
+    background-image: url('/images/cortex-2.jpg');
     background-repeat: repeat;
-} 
+}
+bio {width: 80%;
+     color: white;
+     border: solid 0px #ccc;
+     
+     text-decoration-style: dashed;
+     font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
