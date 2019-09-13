@@ -66,4 +66,8 @@ ac.rollover {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-}    
+}
+.container1 {
+    background-image: url('/images/uk.png');
+    background-repeat: repeat;
+} 
