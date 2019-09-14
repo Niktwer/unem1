@@ -46,8 +46,8 @@ ac.rollover {
     /* ac.rollover.background: url('/images/uk.png'),
      ac.rollover:hover.background: url('/images/uk.png'); */
     ac.rollover:hover {
-        background: url('/images/ic_back_00.png'); /* Путь к файлу с заменяемым рисунком  */
-        width: 144px; /* Ширина рисунка */
+        background: url('/images/ic_ubuntu-c.png'); /* Путь к файлу с заменяемым рисунком  */
+        width: 96px; /* Ширина рисунка */
         height: 96px; /*  Высота рисунка */
         
 }

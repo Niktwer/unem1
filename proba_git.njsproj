@@ -41,6 +41,7 @@
     <Content Include="public\images\ic_1.png" />
     <Content Include="public\images\ic_back_00.png" />
     <Content Include="public\images\ic_back_web.png" />
+    <Content Include="public\images\ic_ubuntu-c.png" />
     <Content Include="public\images\my.jpg" />
     <Content Include="public\images\uk.png" />
     <Content Include="public\images\web_512.png" />
