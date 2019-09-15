@@ -78,3 +78,8 @@ bio {width: 80%;
      text-decoration-style: dashed;
      font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
+.modal__close {
+    background: transparent;
+    border: 0;
+}
+

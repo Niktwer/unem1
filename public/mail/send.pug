@@ -1,0 +1,29 @@
+doctype html
+head
+  meta(charset='utf-8')
+  title Nodemailer Email Example
+  link(rel='stylesheet' href='bootstrap.min.css')
+.container
+  br
+  h1 Send The Email
+  br
+  form(action='/send-email' method='post')
+    .row
+      .col-md-4
+      .form-group.col-md-4
+        label(for='to') To:
+        input.form-control(type='email' name='to')
+    .row
+      .col-md-4
+      .form-group.col-md-4
+        label(for='subject') Subject:
+        input.form-control(type='text' name='subject')
+    .row
+      .col-md-4
+      .form-group.col-md-4
+        label(for='body') Body:
+        textarea.form-control(cols='5' rows='5' name='body')
+    .row
+      .col-md-4
+      .form-group.col-md-4
+        button.btn.btn-success(type='submit') Send

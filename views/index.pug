@@ -1,7 +1,7 @@
 ﻿extends layout
 
 block content 
-  <ac id='gh' href="#" class="rollover" onclick='flag()' > </ac>
+  <ac id='gh' href="#" class="rollover" onclick="window.open('/mail/send.pug','_self',false,'height=100,widht=100')" > </ac>
   script.
     var f1 = function() {
     document.getElementById('nv').src='#{data.item1}'
@@ -22,7 +22,7 @@ block content
   script.
     var ua = function() { document.getElementById('nv').src='#{data1.item2}' }
   script.
-    var flag = function() { document.getElementById('nv').src='#{data1.item2}' }
+    var flag = function() { "window.open('/mail/send.pug','_blank',false,'height=100,widht=100')" }
   script.
     var bd = function() {
     if ( document.getElementById('myImage').src.indexOf('#{proba.item1}')>0)
