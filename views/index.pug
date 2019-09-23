@@ -1,7 +1,56 @@
 ﻿extends layout
-
 block content 
-  <ac id='gh' href="#" class="rollover" onclick="window.open('/mail/send.pug','_self',false,'height=100,widht=100')" > </ac>
+  link(rel='stylesheet', href='/stylesheets/main.css')
+
+  link(rel='stylesheet', href='/stylesheets/micromodal.css')
+  script(src='/javascripts/micromodal.js')
+
+  <ac id='gh' href="#" class="rollover" onclick='modal()')" > </ac>
+
+      <div class="container" style="display: inline-block;"></div>
+       <div   id="text1"style="display: inline-block;" >
+            bio: <p>Тверезовський Микола
+       </div> 
+       <iframe id="nv" style = "text-align: center;"  src = "/viewer#../pdf/pdf-test.pdf" width='100%' height=h_s allowfullscreen webkitallowfullscreen></iframe>
+       <div id="lan">'#{h_s}'</div>
+       <div id="but" align="center">
+            d: button(title="1" onclick='f1()') One!
+            d: button(title="2" onclick='f2()') Two!
+            d: button(title="3" onclick='f3()') Three!
+       </div>
+
+
+       <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+          <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+            <header class="modal__header">
+              <h2 class="modal__title" id="modal-1-title">
+                 Try '#{data.item1}'
+              </h2>
+              <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+            </header>
+            <main class="modal__content" id="modal-1-content">
+              <p id="h" innerText = "submitted!">
+                 Try Write me a message and email it to me. Also, <code>esc</code> to close window.
+              </p>
+                <label id="m_message" for="website"></label>
+                  
+                 <textarea id="tt" style="resize: none;" name="website" cols="47" rows="6"></textarea>
+            </main>
+            <footer class="modal__footer">
+              <button id="m-send"  class="modal__btn modal__btn-primary" onclick='f3()'>#{data.item1}</button> 
+              //<button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Close</button>
+            </footer>
+          </div>
+        </div>
+       </div>
+
+
+  script.
+    var modal = function() {
+    MicroModal.init(); 
+    MicroModal.show('modal-1');
+    }
   script.
     var f1 = function() {
     document.getElementById('nv').src='#{data.item1}'

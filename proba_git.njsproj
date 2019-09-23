@@ -45,11 +45,13 @@
     <Content Include="public\images\my.jpg" />
     <Content Include="public\images\uk.png" />
     <Content Include="public\images\web_512.png" />
+    <Content Include="public\javascripts\micromodal.js" />
     <Content Include="public\mail\proba" />
     <Content Include="public\movies\small.mp4" />
     <Content Include="public\movies\small.webm" />
     <Content Include="public\pdf\pdf-test.pdf" />
     <Content Include="public\pdf\text.txt" />
+    <Content Include="public\stylesheets\micromodal.css" />
     <Content Include="routes\index.js" />
     <Content Include="routes\users.js" />
     <Content Include="package.json" />
