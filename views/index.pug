@@ -45,6 +45,7 @@ block content
         </div>
        </div>
 
+       <script> var ch_lan=0 </script>
 
   script.
     var modal = function() {
@@ -75,12 +76,14 @@ block content
   script.
     var bd = function() {
     if ( document.getElementById('myImage').src.indexOf('#{proba.item1}')>0)
-        { 
+        {
+        ch_lan=1;
         document.getElementById('myImage').src='#{proba.item2}'
         document.getElementById('lan').innerHTML='uk'
         document.getElementById('text1').innerHTML='#{opis.item1}'
         }
-    else{ 
+    else{
+        ch_lan=0;
         document.getElementById('myImage').src='#{proba.item1}'
         document.getElementById('lan').innerHTML='en'
         document.getElementById('text1').innerHTML='#{opis.item2}'
