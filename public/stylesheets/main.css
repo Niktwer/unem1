@@ -68,8 +68,8 @@ ac.rollover {
     background-position: 50% 50%;
 }
 .container1 {
-    background-image: url('/images/cortex-2.jpg');
-    background-repeat: repeat;
+    /*background-image: url('/images/cortex-2.jpg');
+    background-repeat: repeat;*/
 }
 bio {width: 80%;
      color: white;
