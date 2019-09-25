@@ -23,8 +23,8 @@
         };
     }
     var e = function (e, o) {
-        if (!(e instanceof o)) throw new TypeError("Cannot call a class as a function")
-    },
+            if (!(e instanceof o)) throw new TypeError("Cannot call a class as a function")
+        },
         o = function () {
             function e(e, o) {
                 for (var t = 0; t < o.length; t++) {
@@ -52,9 +52,9 @@
                         a = o.triggers,
                         r = void 0 === a ? [] : a,
                         s = o.onShow,
-                        l = void 0 === s ? function () { } : s,
+                        l = void 0 === s ? function () {} : s,
                         c = o.onClose,
-                        d = void 0 === c ? function () { } : c,
+                        d = void 0 === c ? function () {} : c,
                         u = o.openTrigger,
                         f = void 0 === u ? "data-micromodal-trigger" : u,
                         h = o.closeTrigger,
@@ -193,8 +193,8 @@
         return {
             init: function (e) {
                 var o = Object.assign({}, {
-                    openTrigger: "data-micromodal-trigger"
-                }, e),
+                        openTrigger: "data-micromodal-trigger"
+                    }, e),
                     i = [].concat(t(document.querySelectorAll("[" + o.openTrigger + "]"))),
                     a = r(i, o.openTrigger)
                 if (!0 !== o.debugMode || !1 !== c(i, a))
