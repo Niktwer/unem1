@@ -1,5 +1,7 @@
 ﻿extends layout
 block content 
+  
+  
   link(rel='stylesheet', href='/stylesheets/main.css')
     
 
@@ -14,13 +16,14 @@ block content
   <div id="lan">'#{h_s}'</div>
   
   <div id="but" align="center">
-    d: button( id='f_but' title="1" onclick='f1()') One!
-    d: button( id= 't-but' title="2" onclick='f2()') Two!
-    d: button( id= 'th-but' title="3" onclick='f3()') Three!
+    d: <button id="_but' title="1"><img src='/images/cortex.jpg' height= 50px width= 50px border-radius= 100% onclick='f1()'></button> 
+    d: <button id= 't-but' title="2" onclick='f2()' ><img src= '/images/1c_01.png' height= 100px width= 100px border-radius= 100% ></button>
+    d: button( id= 'th-but' title="3" onclick='f3()')
   </div>
 
   link(rel='stylesheet', href='/stylesheets/micromodal.css')
   script(src='/javascripts/micromodal.js')
+  script(src='/javascripts/function.js')  
 
   <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
     <div class="modal__overlay" tabindex="-1" data-micromodal-close>
@@ -44,77 +47,4 @@ block content
           </footer>
       </div>
     </div>
-  </div>
-
-   
-  <script>
-    var ch_lan=0; 
-  </script>    
-     
-    
-  script.
-    var modal = function() {
-      MicroModal.init()
-      MicroModal.show( 'modal-1' ) }   
-  
-  script.
-    var f1 = function() {
-    document.getElementById( 'nv' ).src='#{data.item1}'
-    document.getElementById( 'lan' ).innerHTML=screen.height }  
-
-  script.
-    var f2 = function() { 
-    document.getElementById( 'nv' ).src='#{data.item2}' 
-    document.getElementById( 'lan' ).innerHTML="2" }  
-
-  script.
-    var f3 = function() {
-    document.getElementById( 'nv' ).src= '#{data.item3}' 
-    document.getElementById( 'lan' ).innerHTML="3" }
-
-  script.
-    var en = function() { document.getElementById('nv').src='#{data1.item1}' }
-
-  script.
-    var ua = function() { document.getElementById('nv').src='#{data1.item2}' }
-
-  script.
-    var flag = function() { "window.open('/mail/send.pug','_blank',false,'height=100,widht=100')" }
-
-  script.
-    var bd = function() {
-    if ( document.getElementById('myImage').src.indexOf('#{proba.item1}')>0)
-      ch_lan=1
-      document.getElementById('myImage').src='#{proba.item2}'
-      document.getElementById('lan').innerHTML='uk'
-      document.getElementById('text1').innerHTML='#{opis.item1}'
-      text_lan_uk()       
-    else
-      ch_lan=0
-      document.getElementById('myImage').src='#{proba.item1}'
-      document.getElementById('lan').innerHTML='en'
-      document.getElementById('text1').innerHTML='#{opis.item2}'
-      text_lan_en() }
-
-  script.
-    var flag_im = function() { document.getElementById('lan').innerHTML="вибір мови" }
-
-  script.
-    var flag_out = function() { document.getElementById('lan').innerHTML="" }
-
-  script.
-    var h_ss=function() {
-    document.getElementById('nv').height=screen.height*0.8 }  
-  
-
-  script.
-    var text_lan_en=function() {
-    document.getElementById('f-but').innerHTML='first'
-    document.getElementById('t-but').innerHTML='two'
-    document.getElementById('th-but').innerHTML='third' }
-
-  script.
-    var text_lan_uk=function() {
-    document.getElementById('f-but').innerHTML='перший'
-    document.getElementById('t-but').innerHTML='другий'
-    document.getElementById('th-but').innerHTML='третій' }
+  </div> 

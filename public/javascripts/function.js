@@ -9,6 +9,15 @@
   var text1=document.getElementById('text1');
   var myImage=document.getElementById('myImage');
 
+  
+  var deleteButton = document.createElement("input")
+        deleteButton.setAttribute("type", "button");
+        deleteButton.setAttribute("value", "Delete");
+        deleteButton.src = '/images/en.png';
+        deleteButton.type = "image";
+        document.body.appendChild(deleteButton)
+
+
   function modal() {
       MicroModal.init();
       MicroModal.show('modal-1');

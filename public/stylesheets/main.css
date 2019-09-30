@@ -20,6 +20,8 @@ d button {
     text-decoration-style: dashed;
     padding: 0px;
     margin: 10px;
+    background-image: url( '/images/ic_1.png' );
+    background-size: 50px 50px;
 }
 
  d:hover button {
